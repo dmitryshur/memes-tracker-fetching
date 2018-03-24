@@ -5,6 +5,8 @@ use futures::future::Future;
 
 use hyper::header::ContentLength;
 use hyper::server::{Http, Request, Response, Service};
+use std::env;
+use std::net;
 
 struct HelloWorld;
 
@@ -32,8 +34,7 @@ impl Service for HelloWorld {
 }
 
 fn main() {
-    let addr = "127.0.0.1:3000".parse().unwrap();
+    let addr = env::var("ADDRESS").unwrap().parse::<net::SocketAddr>().unwrap();
     let server = Http::new().bind(&addr, || Ok(HelloWorld)).unwrap();
-    println!("testing");
     //server.run().unwrap();
 }
