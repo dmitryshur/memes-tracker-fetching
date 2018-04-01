@@ -1,0 +1,6 @@
+* get html pages from 9gag, https://www.memecenter.com, https://www.memedroid.com/, http://www.quickmeme.com
+* parse the title, image, date, number of likes
+
+* in main, create reactor to use async functions
+* in fetch, download the needed pages which were passed as a vector
+* return the bodies of the pages
