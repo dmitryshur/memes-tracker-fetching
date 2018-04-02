@@ -10,3 +10,22 @@ pub fn fetch_pages(links: Vec<&str>) -> Vec<Response> {
     }
     responses
 }
+
+#[cfg(test)]
+mod tests {
+    use reqwest::get;
+
+    #[test]
+    fn fetch_pages() {
+        let links = vec![
+            "https://9gag.com",
+            "https://www.memecenter.com",
+            "https://www.memedroid.com/",
+            "http://www.quickmeme.com",
+        ];
+        for link in links {
+            let mut response = get(link).unwrap();
+            assert_eq!(response.status().is_success(), true);
+        }
+    }
+}
