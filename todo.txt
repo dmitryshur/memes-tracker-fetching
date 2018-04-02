@@ -1,6 +1,26 @@
-* get html pages from 9gag, https://www.memecenter.com, https://www.memedroid.com/, http://www.quickmeme.com
-* parse the title, image, date, number of likes
+* parse the title, image, date, number of likes. save the website parsed from with the link to the
+  meme
 
-* in main, create reactor to use async functions
-* in fetch, download the needed pages which were passed as a vector
-* return the bodies of the pages
+* later on, create a struct with the fields above
+
+* 9gag page info is in the Script tag. what needs to be parsed:
+  date: {
+    posts: [
+      { 
+        id,
+        url,
+        title,
+        type,
+        nsfw,
+        upVoteCount,
+        hasLongPostCover,
+        images: {
+          name: {
+            width,
+            height,
+            url
+          }
+        }
+      }
+    ]
+  }
