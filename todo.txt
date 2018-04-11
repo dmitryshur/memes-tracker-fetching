@@ -24,3 +24,5 @@
       }
     ]
   }
+
+* get the "data" from the text. then, get the psots from the data with all the attributes

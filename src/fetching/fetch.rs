@@ -18,7 +18,7 @@ mod tests {
     #[test]
     fn fetch_pages() {
         let links = vec![
-            "https://9gag.com",
+            "https://9gag.com/hot",
             "https://www.memecenter.com",
             "https://www.memedroid.com/",
             "http://www.quickmeme.com",

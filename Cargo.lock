@@ -812,6 +812,7 @@ version = "0.1.0"
 dependencies = [
  "actix 0.5.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "actix-web 0.4.10 (registry+https://github.com/rust-lang/crates.io-index)",
+ "regex 0.2.10 (registry+https://github.com/rust-lang/crates.io-index)",
  "reqwest 0.8.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "select 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
