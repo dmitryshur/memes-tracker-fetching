@@ -1,0 +1,2 @@
+* write PartialEq trait for the Post struct in order to use it in the tests
+* add custom error types and error handling in general
