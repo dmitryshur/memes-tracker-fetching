@@ -68,7 +68,7 @@ mod tests {
       Post {
         id: "ajEg2Bq".to_string(),
         url: r#"http:\/\/9gag.com\/gag\/ajEg2Bq"#.to_string(),
-        title: "Boss told me to make an ethernet cable today. No specification of length. Jokes on them".to_string(),
+        title: "Boss told me to make an ethernet cable today. No specification of length. Jokes on them.".to_string(),
         post_type: "Photo".to_string(),
         vote_count: 2787,
         is_long: false,
@@ -87,3 +87,5 @@ mod tests {
     assert_eq!(parse_9gag_post(text), parse_result);
   }
 }
+
+

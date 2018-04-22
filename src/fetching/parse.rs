@@ -1,6 +1,6 @@
 use fetching::parse_9gag::parse_9gag_posts;
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub struct Post {
     pub id: String,
     // TODO: change to a URL type from some crate
