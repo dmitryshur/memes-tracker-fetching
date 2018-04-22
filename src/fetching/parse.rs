@@ -8,6 +8,7 @@ pub struct Post {
     title: String,
     post_type: String,
     vote_count: u32,
+    is_long: bool,
     images: Vec<PostImage>
 }
 
