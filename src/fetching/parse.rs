@@ -2,14 +2,15 @@ use fetching::parse_9gag::parse_9gag_posts;
 
 #[derive(Debug)]
 pub struct Post {
-    id: String,
+    pub id: String,
     // TODO: change to a URL type from some crate
-    url: String,
-    title: String,
-    post_type: String,
-    vote_count: u32,
-    is_long: bool,
-    images: Vec<PostImage>
+    pub url: String,
+    pub title: String,
+    pub post_type: String,
+    pub vote_count: u32,
+    pub is_long: bool,
+    // images: Vec<PostImage>
+    pub images: String
 }
 
 #[derive(Debug)]
