@@ -1,6 +1,6 @@
 use fetching::parse_9gag::parse_9gag_posts;
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Clone)]
 pub struct Post {
     pub id: String,
     // TODO: change to a URL type from some crate
@@ -27,8 +27,9 @@ pub fn parse_posts(html: &Vec<String>) {
         match index {
             // 9gag
             0 => {
-                println!("9gag body");
-                parse_9gag_posts(&text);
+                let posts = parse_9gag_posts(&text);
+                //println!("{:?}", posts);
+
             }
 
             // memecenter
